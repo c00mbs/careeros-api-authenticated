@@ -4,8 +4,11 @@ import os
 from datetime import UTC, datetime, timedelta
 
 import jwt
+from dotenv import load_dotenv
 from pwdlib import PasswordHash
 
+
+load_dotenv()
 
 ALGORITHM = "HS256"
 password_hash = PasswordHash.recommended()
